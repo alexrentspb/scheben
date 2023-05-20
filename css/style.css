@@ -4,6 +4,15 @@
     
 }
 
+body {
+    background-image: url("/img/patern.png");
+    
+}
+
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     
     height: 100%;
@@ -584,7 +593,7 @@ margin-right: 30px;
 
 .offers__bottom-offer{
     min-height: 351px;
-    max-width: 380px;
+    max-width: 500px;
     background-color: #D0D3CD;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
     margin: -119px auto 0 auto;
@@ -707,7 +716,7 @@ padding-bottom: 111px;
     text-transform: uppercase; /* Текст заглавными буквами выглядит более формально */
     text-align: center; /* Расположение текста по центру может сделать его более привлекательным */
     margin-bottom: 32px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     text-shadow: 2px 2px 4px rgba(158, 156, 156, 0.9); /* Добавляем тень к тексту для большей глубины */
     transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
 }
@@ -1856,6 +1865,7 @@ color: #5E6060;
         margin-bottom: 13px;
         margin-top: 20px;
         font-family: 'PT Sans';
+        
 font-style: normal;
 font-weight: 400;
 font-size: 50px;
@@ -1876,7 +1886,7 @@ border-radius: 5px;
 
 
     .header__mobile-block_2{
-        background: url('../img/header_mobile_2.png');
+        background: url('../img/cover_bg_1.png');
         height: 300px;
         background-size: cover;
         margin-bottom: 13px;
@@ -2040,6 +2050,7 @@ border-radius: 5px;
      .header__mobile-block_1{
         height: 131px;
         font-size: 24px;
+        
 
      }
 
