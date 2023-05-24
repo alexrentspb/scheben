@@ -146,7 +146,7 @@ color: #474747;
     font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 16px;
 line-height: 22px;
 /* identical to box height, or 161% */
 
@@ -913,6 +913,7 @@ min-width: 130px;
     max-width: 50px;
   max-height: 50px;
   margin-right: 22px;
+  margin-top: 6px;
     
 }
 .garanty__block_left{
@@ -1122,6 +1123,30 @@ margin-left: 16px;
     
 }
 
+@media screen and (max-width: 767px) {
+    .address__mobile,.address__mobile a {
+        display: block;
+        font-family: 'PT Sans', sans-serif; 
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 12px;
+    /* letter-spacing: 0.2px; */
+    color: #000000;
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-bottom: 22px;
+    /* margin-top: 12px; */
+    text-shadow: 1px 1px 4px rgba(157, 156, 156, 0.9); 
+    }
+}
+
+/* Стили для настольных компьютеров и планшетов */
+@media screen and (min-width: 768px) {
+    .address__mobile {
+        display: none;
+    }
+}
+
 .address__street {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -1191,14 +1216,14 @@ line-height: 31px;
 
 
 color: #FFFFFF;
-margin-bottom: 16px;
+margin-bottom: 5px;
 }
 
 .about__description_1{
     font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 15px;
+font-size: 16px;
 line-height: 22px;
 /* or 150% */
 
@@ -1250,7 +1275,7 @@ border-radius: 5px;
 .about__container{
     /* min-width: 480px; */
     margin-left: 130px;
-    padding-top: 25px;
+    padding-top: 5px;
     padding-right: 110px;
 }
 /* about end */
@@ -1372,7 +1397,7 @@ box-sizing: border-box;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     /* identical to box height, or 161% */
     
@@ -1387,7 +1412,7 @@ box-sizing: border-box;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     /* identical to box height, or 161% */
     
@@ -2447,3 +2472,47 @@ border-radius: 5px;
 }
 
 /* media end */
+
+/* litebox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+
+  .lightbox-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Стили для списка */
+  .garanty__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .garanty__list-item {
+    cursor: pointer;
+    text-decoration: underline;
+    /* color: blue; */
+  }

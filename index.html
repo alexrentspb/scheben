@@ -599,16 +599,31 @@
                 Регулярные лабораторные исследования
               </p>
               <ul class="garanty__list">
-                <li class="garanty__list-item">
+                <li
+                  class="garanty__list-item"
+                  onclick="openLightbox('img/sert-kachestva23.jpg')">
                   Сертификат соответствия известняковый щеб.
                 </li>
-                <li class="garanty__list-item">
+                <li
+                  class="garanty__list-item"
+                  onclick="openLightbox('img/sert-kachestva23.jpg')">
                   Сертификат соответствия гравийный щеб.
                 </li>
-                <li class="garanty__list-item">
+                <li
+                  class="garanty__list-item"
+                  onclick="openLightbox('img/sert-kachestva23.jpg')">
                   Сертификат соответствия песок
                 </li>
               </ul>
+
+              <div class="lightbox">
+                <div class="lightbox-content">
+                  <img
+                    class="lightbox-image"
+                    src=""
+                    alt="Сертификат соответствия" />
+                </div>
+              </div>
               <!-- <button class="garanty__button">ВСЕ СЕРТИФИКАТЫ</button> -->
             </div>
 
@@ -621,7 +636,17 @@
       </section>
 
       <section id="address">
-        <div><h2 class="address__h2">ПУНКТЫ ВЫГРУЗКИ</h2></div>
+        <div>
+          <h2 class="address__h2">ПУНКТЫ ВЫГРУЗКИ</h2>
+        </div>
+        <div class="address__mobile">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Московская+область,+Солнечногорский+район,+д.Берсеневка"
+            target="_blank">
+            Московская область, Солнечногорский район, д.Берсеневка
+          </a>
+        </div>
+
         <div class="address">
           <div class="address-image">
             <img src="img/map_bg.png" alt="adress" />
@@ -649,7 +674,7 @@
               и перевалку любых объемов всех видов нерудных материалов. Наличие
               собственных перевалочных пунктов позволяет нашим клиентам имеют
               безопасно складировать нерудные материалы на любой срок под
-              ответственное хранение.//
+              ответственное хранение.
             </p>
             <p class="about__description_2">
               Наша компания является важным звеном между производителем нерудных
@@ -694,5 +719,20 @@
 
     <script src="js\jquery.js"></script>
     <script src="js\script.js"></script>
+    <script>
+      function openLightbox(imageUrl) {
+        var lightbox = document.querySelector(".lightbox");
+        var lightboxImage = document.querySelector(".lightbox-image");
+
+        lightboxImage.src = imageUrl;
+        lightbox.style.display = "flex";
+      }
+
+      document
+        .querySelector(".lightbox")
+        .addEventListener("click", function () {
+          this.style.display = "none";
+        });
+    </script>
   </body>
 </html>
