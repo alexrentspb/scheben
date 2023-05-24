@@ -512,7 +512,7 @@ border-radius: 5px;
 .benefits__benefit_1{
     display: flex;
     justify-content: center;
-    background: #8eff3f;
+    background: #99d075;
     height: 235px;
     max-width: 352px;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
@@ -525,7 +525,7 @@ border-radius: 5px;
 .benefits__benefit_2{
     display: flex;
     justify-content: center;
-    background: #5ce303;
+    background: #7ac14d;
     height: 235px;
     max-width: 352px;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
@@ -534,7 +534,7 @@ border-radius: 5px;
 .benefits__benefit_3{
     display: flex;
     justify-content: center;
-    background: #48b900;
+    background: #63aa36;
     height: 235px;
     max-width: 352px;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
@@ -601,7 +601,7 @@ margin-right: 30px;
 .offers__bottom-offer{
     min-height: 351px;
     max-width: 500px;
-    background-color: #EEEEEE;
+    background-color: #f2e305;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
     margin: -119px auto 0 auto;
     border-radius: 5px;
@@ -826,13 +826,13 @@ margin-bottom: 10px;
     font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 15px;
+font-size: 16px;
 line-height: 20px;
 /* or 112% */
 
 letter-spacing: 0.6px;
 
-color: #999999;
+color: #222;
 }
 
 .table__col_right{ 
@@ -1121,6 +1121,28 @@ margin-left: 16px;
     text-shadow: 2px 2px 4px rgba(157, 156, 156, 0.9); 
     
 }
+
+.address__street {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .address__street {
+      /* font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.4px;
+      text-align: center; */
+      display: none;
+    }
+  }
 
 /* adress end */
 
@@ -1930,7 +1952,7 @@ color: #000000;
     }
 
     .header__mobile-block_1{
-        background: url('../img/header_mobile_1.png');
+        background: url('../img/offer_1.jpg');
         height: 300px;
         background-size: cover;
         margin-bottom: 13px;
@@ -1957,7 +1979,7 @@ border-radius: 5px;
 
 
     .header__mobile-block_2{
-        background: url('../img/cover_bg_1.png');
+        background: url('../img/offer_2.jpg');
         height: 300px;
         background-size: cover;
         margin-bottom: 13px;
@@ -2148,7 +2170,7 @@ border-radius: 5px;
 
     }
 
-    .benefits__benefit_1::before{
+    /* .benefits__benefit_1::before{
         bottom: 21px;
         content: "";
         left: 21px;
@@ -2189,7 +2211,7 @@ border-radius: 5px;
         border-color: rgba(255, 255, 255, 0.45);
         border-image: initial;
         border-radius: 5px;
-    }
+    } */
 
 
     .benefits__benefit_2{
@@ -2419,7 +2441,7 @@ border-radius: 5px;
         text-align: right;
     }
     .office{
-        padding-left: 46px;
+        padding-left: 30px;
         text-align: right;
     }
 }
