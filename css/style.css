@@ -601,7 +601,7 @@ margin-right: 30px;
 .offers__bottom-offer{
     min-height: 351px;
     max-width: 500px;
-    background-color: #D0D3CD;
+    background-color: #EEEEEE;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
     margin: -119px auto 0 auto;
     border-radius: 5px;
@@ -1067,66 +1067,62 @@ margin-left: 16px;
 }
 /* garanty end */
 
-/* map start */
-.map__h2{
-    font-family: 'PT Sans', sans-serif; /* Поддерживающий шрифт на случай, если 'PT Sans' не загрузится */
+/* adress start */
+.address {
+    display: flex;
+    
+  }
+
+  .address-image,
+  .address-map {
+    flex-basis: 50%;
+  }
+
+  .address-image img {
+    width: 675px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .address {
+      flex-direction: column;
+    }
+
+    .address-image,
+    .address-map {
+      flex-basis: 100%;
+    }
+
+    .address-image img {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      margin-bottom: -55px;
+    }
+    .address-map script {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: 300px !important;
+      }
+  }
+  .address__h2{
+    font-family: 'PT Sans', sans-serif; 
     font-style: normal;
-    font-weight: 700; /* Делаем шрифт жирнее для большей выразительности */
+    font-weight: 700; 
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.6px;
     color: #000000;
-    text-transform: uppercase; /* Текст заглавными буквами выглядит более формально */
-    text-align: center; /* Расположение текста по центру может сделать его более привлекательным */
+    text-transform: uppercase; 
+    text-align: center; 
     margin-bottom: 32px;
     margin-top: 32px;
-    text-shadow: 2px 2px 4px rgba(172, 171, 171, 0.9); /* Добавляем тень к тексту для большей глубины */
-    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
-}
-
-
-
-
-.map__container {
-    display: flex;
-    background: url(../img/map_bg.png);
-    background-position: left center; /* сдвигает изображение влево */
-    padding-bottom: 68px;
-    height: 432px;
-}
-
-
-.map__script{
-    width: 50%;
-}
-
-.map__adresses{
-    width: 50%;
+    text-shadow: 2px 2px 4px rgba(157, 156, 156, 0.9); 
     
 }
 
-.map__adresses{
-    font-family: 'PT Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 31px;
-/* or 130% */
-
-
-color: #000000;
-position: relative;
-}
-
-.map__p{
-    padding-left: 20px;
-    padding-top: 469px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавляет тень для текста */
-}
-
-
-/* map end */
+/* adress end */
 
 /* about start */
 #about{
@@ -1147,6 +1143,12 @@ position: relative;
 @media (max-width: 768px) {
     .about__block_img {
         display: none;
+    }
+    #about{
+       
+        margin-top: -540px;
+        
+    
     }
 }
 
@@ -2302,7 +2304,7 @@ border-radius: 5px;
 
     .about__block_right{
         background: #595959;
-        margin-top: 300px;
+        margin-top: 500px;
     }
 
     .about__container{
@@ -2417,7 +2419,7 @@ border-radius: 5px;
         text-align: right;
     }
     .office{
-        padding-left: 60px;
+        padding-left: 46px;
         text-align: right;
     }
 }
