@@ -1071,9 +1071,17 @@ margin-left: 16px;
 /* adress start */
 .address {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .address {
+      display: block; /* Изменяем свойство display на block для мобильных устройств */
+    }
+  }
+  
 
   .address-image,
   .address-map {
@@ -1159,7 +1167,7 @@ margin-left: 16px;
     line-height: 40px;
     letter-spacing: 0.6px;
     color: #000000;
-    text-align: left;
+    text-align: center;
     margin-top: 5px;
   }
 
