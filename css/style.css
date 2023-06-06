@@ -318,7 +318,7 @@ color: #474747;
 
 .cover_1{
     height: 470px;
-    background: no-repeat  url("../img/cover_bg_1.png");
+    background: no-repeat  url("../img/cover_bg_1.jpg");
     background-size: cover;
     position: relative;
     
@@ -623,16 +623,17 @@ padding-top: 29px;
 }
 
 .offers__hp{
-    font-family: 'PT Sans';
+font-family: 'PT Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 25px;
 line-height: 23px;
+text-align: center;
 /* identical to box height, or 130% */
 
 
 color: #333333;
-margin-left: 75px;
+/* margin-left: 75px; */
 padding-top: 32px;
 }
 
@@ -706,12 +707,19 @@ padding-bottom: 111px;
 
 }
 
-.price__bg{
+.price__bg {
     background: #EEEEEE;
     border-radius: 0px 0px 8px 8px;
     padding: 20px;
- 
-}
+    height: 990px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .price__bg {
+      height: auto;
+    }
+  }
+  
 .price__h2{
     font-family: 'PT Sans', sans-serif; /* Поддерживающий шрифт на случай, если 'PT Sans' не загрузится */
     font-style: normal;
@@ -763,6 +771,7 @@ padding-bottom: 35px;
     border-collapse: collapse;
     text-align: left;
     width: 100%;
+    height: 100%;
 }
 
 .table__top{
@@ -770,7 +779,7 @@ padding-bottom: 35px;
 }
 
 th{
-    padding: 15px 0 15px 23px;
+    padding: 15px 0 15px 15px;
 
     font-family: 'PT Sans';
 font-style: normal;
@@ -823,7 +832,7 @@ margin-bottom: 10px;
 }
 
 .table__description_bottom{
-    font-family: 'PT Sans';
+font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -1169,6 +1178,8 @@ margin-left: 16px;
     color: #000000;
     text-align: center;
     margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(157, 156, 156, 0.9);
+    transition: color 0.3s ease;
   }
 
   @media (max-width: 768px) {
@@ -1898,6 +1909,7 @@ color: #000000;
     letter-spacing: 0.6px;
     
     color: #000000;
+    height: 100%;
     
     }
     
@@ -1911,7 +1923,7 @@ color: #000000;
         border-right: 2px solid #999999;
         padding-right: 15px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         
     }
     
