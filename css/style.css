@@ -721,19 +721,19 @@ padding-bottom: 111px;
   }
   
 .price__h2{
-    font-family: 'PT Sans', sans-serif; /* Поддерживающий шрифт на случай, если 'PT Sans' не загрузится */
+    font-family: 'PT Sans', sans-serif; 
     font-style: normal;
-    font-weight: 700; /* Делаем шрифт жирнее для большей выразительности */
+    font-weight: 700; 
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.6px;
     color: #000000;
-    text-transform: uppercase; /* Текст заглавными буквами выглядит более формально */
-    text-align: center; /* Расположение текста по центру может сделать его более привлекательным */
+    text-transform: uppercase; 
+    text-align: center; 
     margin-bottom: 32px;
     /* margin-top: 32px; */
-    text-shadow: 2px 2px 4px rgba(158, 156, 156, 0.9); /* Добавляем тень к тексту для большей глубины */
-    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+    text-shadow: 2px 2px 4px rgba(158, 156, 156, 0.9); 
+    transition: color 0.3s ease; 
 }
 
 
@@ -2500,7 +2500,7 @@ border-radius: 5px;
 /* media end */
 
 /* litebox */
-.lightbox {
+   .lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -2542,3 +2542,156 @@ border-radius: 5px;
     text-decoration: underline;
     /* color: blue; */
   }
+
+  /* Contacts start */
+
+  
+
+  .contacts__container {
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contacts__h1 {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 39px;
+    margin-top: 32px;
+    text-shadow: 2px 2px 4px rgba(158, 156, 156, 0.9);
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .contacts__h1 {
+      margin-left: 0;
+    }
+  }
+  
+
+  .contacts__h2 {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+  }
+  .contacts__h3 {
+
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #71be42;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .contacts__h3 {
+      margin-left: 24px;
+    }
+  }
+
+  .contacts__desc {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-style: normal;
+  }
+  
+  @media (max-width: 768px) {
+    .contacts__desc {
+      margin-left: 45px;
+    }
+  }
+  
+
+  .contacts__icon {
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+  }
+
+  .contacts__stripe {
+    width: 500px;
+    height: 1px;
+    background-color: rgb(220, 217, 217);
+    margin-left: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .contacts__stripe {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+
+  .contacts__link {
+    position: relative;
+    color: #71be42;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .contacts__link {
+      margin-left: 65px;
+    }
+  }
+  
+  .contacts__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: height 0.3s ease;
+  }
+  
+  .contacts__link:hover::after {
+    height: 0;
+  }
+
+  .contact__map {
+    margin-top: 50px;
+  }
+
+  .contacts__image-container {
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: -600px;
+  }
+  
+  .contacts__image {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .contacts__image {
+      display: none;
+    }
+  }
+  
+  
+  
