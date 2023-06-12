@@ -4,6 +4,38 @@
     
 }
 
+
+h2{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #333;
+}
+
+h3{
+    font-family: 'PT Sans';
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+h4{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    color: #474747;
+    justify-content: center;
+    text-align: justify;
+}
+
 body {
     background-image: url("/img/patern.png");
     
@@ -48,14 +80,14 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 24px;
-/* or 100% */
+
 
 letter-spacing: 0.6px;
 text-transform: uppercase;
 
 color: #5D5F5F;
 text-align: right;
-margin-right: 37px;
+
 }
 
 .top__p{
@@ -69,7 +101,7 @@ line-height: 16px;
 letter-spacing: 0.6px;
 
 color: #474747;
-text-align: right;
+
 }
 
 .logo{
@@ -80,7 +112,7 @@ text-align: right;
 }
 
 .logo__container{
-    text-align: rigth;
+    text-align: center;
 }
 
 
@@ -2542,8 +2574,10 @@ border-radius: 5px;
     text-decoration: underline;
     /* color: blue; */
   }
+/* litebox end*/
 
-  /* Contacts start */
+
+/* Contacts start */
 
   
 
@@ -2693,5 +2727,158 @@ border-radius: 5px;
     }
   }
   
+/* Contacts end */ 
+
+
+
+/* Rubble-delivery start */
+
+.rubble-delivery__main-container {
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .rubble-delivery__main-container {
+        padding: 0 20px;
+    }
+}
+
+
+.rubble-delivery__h1{ 
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    text-shadow: 2px 2px 4px rgba(142, 141, 141, 0.9);
+    transition: color 0.3s ease;
+}
+
+.rubble-delivery__h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.rubble-delivery__container {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .rubble-delivery__container {
+        flex-direction: column;
+    }
+}
+
   
+  .rubble-delivery__text {
+    flex: 1;
+    padding: 10px;
+    
+  }
+  
+  .rubble-delivery__photo {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .rubble-delivery__photo img {
+    max-width: 100%;
+    max-height: 400px;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  .rubble-delivery__wrap {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    .rubble-delivery__wrap {
+        flex-direction: column;
+        
+    }
+}
+
+
+  .rubble-delivery__block {
+    
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    
+}
+@media screen and (max-width: 767px) {
+    .rubble-delivery__block {
+        padding: 0;
+        width: 100%;
+        text-align: start;
+    }
+    
+    .rubble-delivery__block h4 {
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+}
+
+.rubble-delivery__button {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.rubble-delivery__button button {
+    background: #71be42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+
+  
+  .rubble-delivery__button:hover {
+    background: #7bf330;
+  }
+  
+
+.rubble-delivery__list{
+    padding-left: 20px;
+}
+
+ul li::marker {
+    color: green;
+  }
+
+  .rubble-delivery__benefits__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    /* Изменить отображение на колонку для мобильных устройств с шириной экрана до 767px */
+    .rubble-delivery__benefits__container {
+        flex-direction: column;
+        justify-content: initial;
+    }
+}
+
+
   
