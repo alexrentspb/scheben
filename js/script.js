@@ -285,3 +285,13 @@ $(window).resize(function() {
     
     };
 });
+
+function openLightbox(imageUrl) {
+    var lightbox = document.querySelector(".lightbox");
+    var lightboxImage = document.querySelector(".lightbox-image");
+
+    lightboxImage.src = imageUrl;
+    lightbox.style.display = "flex";
+  }
+  
+  

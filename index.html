@@ -116,17 +116,27 @@
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#!" class="menu__link menu__link_green">КАТАЛОГ</a>
+                <ul class="submenu">
+                  <li class="submenu__li">
+                    <a class="submenu__link" href="rubble-delivery.html"
+                      >Щебень</a
+                    >
+                  </li>
+                  <li class="submenu__li">
+                    <a class="submenu__link" href="rubble-delivery.html"
+                      >Песок</a
+                    >
+                  </li>
+                  <li class="submenu__li">
+                    <a class="submenu__link" href="rubble-delivery.html"
+                      >Другие услуги</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li class="menu__item menu__link_mobile">
-                <a href="#!" class="menu__link">Каталог</a>
-              </li>
-              <!-- <li class="menu__item">
-                <a href="#offers" class="menu__link">Акции</a>
-              </li> -->
               <li class="menu__item">
                 <a href="#price" class="menu__link">Цены</a>
               </li>
-
               <li class="menu__item">
                 <a href="#map" class="menu__link">Самовывоз</a>
               </li>
@@ -140,6 +150,18 @@
               </li>
               <li class="menu__item">
                 <a href="#about" class="menu__link">О компании</a>
+                <ul class="submenu">
+                  <li class="submenu__li">
+                    <a class="submenu__link" href="rubble-delivery.html"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="submenu__li">
+                    <a class="submenu__link" href="rubble-delivery.html"
+                      >Сертификаты</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="menu__item">
                 <a href="contacts.html" class="menu__link">Контакты</a>
@@ -776,14 +798,6 @@
     <script src="js\jquery.js"></script>
     <script src="js\script.js"></script>
     <script>
-      function openLightbox(imageUrl) {
-        var lightbox = document.querySelector(".lightbox");
-        var lightboxImage = document.querySelector(".lightbox-image");
-
-        lightboxImage.src = imageUrl;
-        lightbox.style.display = "flex";
-      }
-
       document
         .querySelector(".lightbox")
         .addEventListener("click", function () {
